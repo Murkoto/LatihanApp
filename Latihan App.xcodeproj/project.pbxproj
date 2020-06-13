@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		441A110A24935E08001416FB /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A110924935E08001416FB /* DetailViewController.swift */; };
+		441A110C24935E5F001416FB /* AcademiesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A110B24935E5F001416FB /* AcademiesViewController.swift */; };
+		441A110E24935E8B001416FB /* ChallangesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A110D24935E8B001416FB /* ChallangesViewController.swift */; };
+		441A111124935EE2001416FB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441A111024935EE2001416FB /* ProfileViewController.swift */; };
 		447E73F0248D94D900B24C48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E73EF248D94D900B24C48 /* AppDelegate.swift */; };
 		447E73F2248D94D900B24C48 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E73F1248D94D900B24C48 /* SceneDelegate.swift */; };
 		447E73F4248D94D900B24C48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E73F3248D94D900B24C48 /* ViewController.swift */; };
@@ -16,6 +20,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		441A110924935E08001416FB /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		441A110B24935E5F001416FB /* AcademiesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AcademiesViewController.swift; sourceTree = "<group>"; };
+		441A110D24935E8B001416FB /* ChallangesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChallangesViewController.swift; sourceTree = "<group>"; };
+		441A111024935EE2001416FB /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		447E73EC248D94D900B24C48 /* Latihan App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Latihan App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		447E73EF248D94D900B24C48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		447E73F1248D94D900B24C48 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +45,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441A110F24935EA2001416FB /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				441A111024935EE2001416FB /* ProfileViewController.swift */,
+				441A110D24935E8B001416FB /* ChallangesViewController.swift */,
+				441A110924935E08001416FB /* DetailViewController.swift */,
+				441A110B24935E5F001416FB /* AcademiesViewController.swift */,
+				447E73F3248D94D900B24C48 /* ViewController.swift */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
 		447E73E3248D94D900B24C48 = {
 			isa = PBXGroup;
 			children = (
@@ -58,7 +78,7 @@
 			children = (
 				447E73EF248D94D900B24C48 /* AppDelegate.swift */,
 				447E73F1248D94D900B24C48 /* SceneDelegate.swift */,
-				447E73F3248D94D900B24C48 /* ViewController.swift */,
+				441A110F24935EA2001416FB /* controller */,
 				447E73F5248D94D900B24C48 /* Main.storyboard */,
 				447E73F8248D94DE00B24C48 /* Assets.xcassets */,
 				447E73FA248D94DE00B24C48 /* LaunchScreen.storyboard */,
@@ -138,9 +158,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441A110E24935E8B001416FB /* ChallangesViewController.swift in Sources */,
 				447E73F4248D94D900B24C48 /* ViewController.swift in Sources */,
 				447E73F0248D94D900B24C48 /* AppDelegate.swift in Sources */,
+				441A110C24935E5F001416FB /* AcademiesViewController.swift in Sources */,
+				441A111124935EE2001416FB /* ProfileViewController.swift in Sources */,
 				447E73F2248D94D900B24C48 /* SceneDelegate.swift in Sources */,
+				441A110A24935E08001416FB /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +311,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UU7Q7555KJ;
 				INFOPLIST_FILE = "Latihan App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +330,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = UU7Q7555KJ;
 				INFOPLIST_FILE = "Latihan App/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
